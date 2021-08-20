@@ -7,7 +7,7 @@ Remark:计算一个数字的各个数位上的数字的和。
 #include<iostream>
 
 using namespace std;
-int sumDigit()
+int sum_digits()
 {
   int n,num,sum;
   sum=0;

@@ -6,7 +6,7 @@ Remark:判断两个数字是否互质。
 
 #include<iostream>
 using namespace std;
-int isPrimer()
+int is_primer()
 {
     int m,n,q,r,x;
     cin>>m>>n;

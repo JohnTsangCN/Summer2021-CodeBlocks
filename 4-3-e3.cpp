@@ -5,7 +5,7 @@ Remark:一小球从200米高处落下，每次落地后反跳回原高度的一�
 */
 #include<iostream>
 using namespace std;
-int calcDistance()
+int calc_distance()
 {
   float distance = 0;
   float height = 200;

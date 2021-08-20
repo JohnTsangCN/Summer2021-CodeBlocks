@@ -5,7 +5,7 @@ Remark:给定一个范围，计算在这个范围中数字2出现的次数。
 */
 #include<iostream>
 using namespace std;
-int countDigit()
+int count_digit2()
 {
   int l,r,x,num,sum;
   cin>>l>>r;
