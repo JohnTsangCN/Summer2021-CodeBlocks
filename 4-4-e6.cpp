@@ -7,27 +7,24 @@ Remark:给定一个正整数n，求数根。
 using namespace std;
 int main()
 {
-    int sum1,sum2,digit,root,n;
-    sum1 = sum2 = digit = root = n = 0;
+    int sum,n,digit;
+    sum = n = digit = 0;
     cin >> n;
-    do
+    while(n >= 1)
     {
-        digit = n % 10;
-        n = n / 10;
-        sum1 = sum1 + digit;
-    }
-    while(n >= 1);
-    if(sum1 < 10)
-        cout << sum1;
-    else
-    {
-        while(sum1 >= 1)
+        do
         {
-            root = sum1 % 10;
-            sum1 = sum1 / 10;
-            sum2 = sum2 + root;
+            digit = n % 10;
+            n = n / 10;
+            sum = sum + digit;
         }
-        cout << sum2;
+        while(n >= 1);
+        if(sum >= 10)
+        {
+            n = sum;
+            sum = 0;
+        }
     }
+    cout << sum;
     return 0;
 }
